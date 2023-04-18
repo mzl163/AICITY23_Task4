@@ -5,7 +5,14 @@ This project (based on [mmdetection](https://github.com/open-mmlab/mmdetection) 
 
 ## Introduction
 
-In light of challenges and the characteristic of Automated retail checkout, we propose a precise and efficient framework. In the training stage, firstly, we use MSRCR to process training data, which has perfect performance in image enhancement by applying it on each color channel independently. Secondly, the processed data can be used to train the classifier, and it can also be randomly pasted into the background to train the detector. In the testing stage, we first preprocess the video, detect the white tray and the human hand area, then detect, track and classify the products in the white tray, and finally process the trajectory through the MTCR algorithm and output the final results.
+ The system has been validated in Multi-Class Product Counting & Recognition for Automated Retail Checkout (2023 AI CITY Challenge Task4) competition, where our results achieve F1 Score of 0.9787 in Task4 testA, ranking second in 2023 AICITY Challenge Task4.
+ In light of the above perspectives, a self-adaptive target region-based product detection system is proposed to address the challenges of automated retail checkout. The main contributions of this work are as follows:
+1) An Adaptive Target Area Commodity Detection System is designed and verified in 2023 AI CITY Challenge Task4, and it achieves very high accuracy in commodity detection.
+2) A novel data augmentation approach and targeted data synthesis methods are developed to create training data that is more representative of real-world scenarios.
+3) A Dual-detector Fusion Algorithm is designed for the product detection problem, which is used to output the final detection boxes.
+4) A cost-effective Adaptive Target Region Algorithm is introduced to mitigate the impact of camera movement on object detection and tracking in the test videos.
+5) MPFM is designed to effectively fuse the feature representations from multiple classifiers and provide reliable product feature representations for tracking, leading to more stable and accurate classification and tracking results.
+
 
 ![introfig](./images/intro.png)
 
@@ -45,12 +52,12 @@ test_videos/
 * pytorch 1.10.0
 * torchvision 0.11.1
 * cuda 10.2
-* mmcv-full 1.4.2
+* mmcv-full 1.4.3
 * tensorflow-gpu 1.15.0
 
 ```shell
-1. conda create -n DTC python=3.7
-2. conda activate DTC
+1. conda create -n AdaptCD python=3.7
+2. conda activate AdaptCD
 3. conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch
 4. pip install mmcv-full==1.4.3 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
 5. pip install -r requirements.txt
@@ -78,23 +85,26 @@ bash ./mmclassification/tools/train_multi.sh 2
 * Step2: testing.
 Please place the all models in the [checkpoints](./checkpoints) folder. These models can be downloaded from [Model-Zoo](https://drive.google.com/file/d/1nD80vqJQGEE2fL-sMx-cm6O5Q-uL7kF-/view?usp=sharing)
 ```
-checkpoints/
-├── s101.pth
-├── s50.pth
-├── feature.pth
+new_checkpoints/
 ├── b2.pth
-├── detectors_htc_r50_1x_coco-329b1453.pth
+├── best_DTC_single_GPU.pth
+├── cascade_mask_rcnn.pth
+├── detectors_cascade.pth
 ├── detectors_cascade_rcnn.pth
+├── detectors_htc.pth
+├── feature.pth
+├── s50.pth
+├── s101.pth
 ```
 
 Command line
 ```shell
 # 1. Use the FFmpeg library to extract/count frames.
-python tools/extract_frames.py --out_folder ./frames
-# 2. DTC
-python tools/test_net.py --input_folder ./frames --out_file ./results.txt
+python tools1/extract_frames.py --out_folder ./frames
+# 2. AdaptCD
+python tools1/test_network.py --input_folder ./frames --out_file ./results.txt
 ```
 
 # Contact
 
-If you have any questions, feel free to contact Junfeng Wan (wanjunfeng@bupt.edu.cn).
+If you have any questions, feel free to contact Zeliang Ma (mzl@bupt.edu.cn).
