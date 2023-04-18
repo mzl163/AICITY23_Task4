@@ -1,4 +1,4 @@
-Amazing Results With Limited Data In Multi-Class Product Counting and Recegnition.
+AdaptCD: An Adaptive Target Region-based Commodity Detection System
 ===
 
 This project (based on [mmdetection](https://github.com/open-mmlab/mmdetection) && [mmclassification](https://github.com/open-mmlab/mmclassification) && [DeepSort](https://github.com/nwojke/deep_sort)) is the re-implementation of our paper.
@@ -34,7 +34,6 @@ test_videos/
 ├── testA_2.mp4
 ├── testA_3.mp4
 ├── testA_4.mp4
-├── testA_5.mp4
 ├── video_id.txt
 ```
 
@@ -52,8 +51,8 @@ test_videos/
 ```shell
 1. conda create -n DTC python=3.7
 2. conda activate DTC
-3. git clone https://github.com/w-sugar/DTC_AICITY2022
-4. cd DTC_AICITY2022
+3. conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch
+4. pip install mmcv-full==1.4.3 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
 5. pip install -r requirements.txt
 6. sh ./tools/setup.sh
 ```
