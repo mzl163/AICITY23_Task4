@@ -83,7 +83,7 @@ bash ./mmclassification/tools/train_multi.sh 2
 ```
 
 * Step2: testing.
-Please place the all models in the [checkpoints](./checkpoints) folder. These models can be downloaded from [Model-Zoo](https://drive.google.com/file/d/1nD80vqJQGEE2fL-sMx-cm6O5Q-uL7kF-/view?usp=sharing)
+Please place the all models in the [checkpoints](./new_checkpoints) folder. These models can be downloaded from [Model-Zoo](https://drive.google.com/file/d/1nD80vqJQGEE2fL-sMx-cm6O5Q-uL7kF-/view?usp=sharing)
 ```
 new_checkpoints/
 ├── b2.pth
