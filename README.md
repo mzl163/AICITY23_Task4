@@ -89,7 +89,7 @@ bash ./tools1/train_mlp.sh
 ```
 
 * Step2: testing.
-Please place the all models in the [new_checkpoints](./new_checkpoints) folder. These models can be downloaded from [b2.pth](https://drive.google.com/file/d/1Sn476mEAOQ8vptrfYqEgLKeOPUXhj2sX/view?usp=share_link) ,[best_DTC_single_GPU.pth](https://drive.google.com/file/d/14uxbyXYcsBxAjY5JQhpv4a6uuwqyvMlG/view?usp=share_link) ,[cascade_mask_rcnn.pth](https://drive.google.com/file/d/1GIwM9V5IEWGOUiNOtCFk2r5v-bdYRSv3/view?usp=share_link) ,[detectors_cascade_rcnn.pth](https://drive.google.com/file/d/1HMEIdPt3GSGDy8uBe8ZuwY5prqG62oEc/view?usp=share_link) ,[detectors_htc.pth]()
+Please place the all models in the [new_checkpoints](./new_checkpoints) folder. These models can be downloaded from [b2.pth](https://drive.google.com/file/d/1Sn476mEAOQ8vptrfYqEgLKeOPUXhj2sX/view?usp=share_link) ,[best_DTC_single_GPU.pth](https://drive.google.com/file/d/14uxbyXYcsBxAjY5JQhpv4a6uuwqyvMlG/view?usp=share_link) ,[cascade_mask_rcnn.pth](https://drive.google.com/file/d/1GIwM9V5IEWGOUiNOtCFk2r5v-bdYRSv3/view?usp=share_link) ,[detectors_cascade_rcnn.pth](https://drive.google.com/file/d/1HMEIdPt3GSGDy8uBe8ZuwY5prqG62oEc/view?usp=share_link) ,[detectors_htc.pth](https://drive.google.com/file/d/1JuW12j6P2J39CBqwbClHX6OwFpgWF4lB/view?usp=share_link)
 ,[feature.pth](https://drive.google.com/file/d/1AF_dru1ufAEiOSG5aNXykzpnEQbOOgnQ/view?usp=share_link)
 ,[s50.pth](https://drive.google.com/file/d/11KXnl0CS1ZPII4t5hpNNwk6VrWeovHo5/view?usp=share_link)
 ,[s101.pth](https://drive.google.com/file/d/1rnQdQO4NvhJ5U7_-UFGqUytvuIg_UaSc/view?usp=share_link)
