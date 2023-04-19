@@ -77,8 +77,8 @@ if __name__=='__main__':
     parser.add_argument('--epoch',default=300)
     parser.add_argument('--opt',default='adam',type=str)
 
-    parser.add_argument('--train_file',default='/home/ldl/AiCity/DTC_AICITY2022-main/mlp/data',type=str)
-    parser.add_argument('--test_file',default='/home/ldl/AiCity/DTC_AICITY2022-main/mlp/data',type=str)
+    parser.add_argument('--train_file',default='./mlp/data',type=str)
+    parser.add_argument('--test_file',default='./mlp/data',type=str)
     
     parser.add_argument('--input_dim',default=6784)
     parser.add_argument('--hid_dim',default=2048)
