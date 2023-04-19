@@ -20,7 +20,9 @@ This project (based on [mmdetection](https://github.com/open-mmlab/mmdetection) 
 
 ### 1. Training
 1. Download images and annotations for training detection from [GoogleDrive-det](https://drive.google.com/file/d/1zhIEYGuDviOr4N5ZV8nNbWcIDSB2a2oY/view?usp=sharing).
-2. Download images for training classification from [GoogleDrive-cls](https://drive.google.com/file/d/1k1k6b-cQ9UEh5_L3pVi1DHuYeqovi2Va/view?usp=sharing).
+2. Download images and annotations for training detection with mask from [GoogleDrive-det-Cascade_mask_rcnn](https://drive.google.com/file/d/1S-8DYRyYwvNMR2k6bTodxR85ibxRsmw9/view?usp=share_link).
+3. Download images for training classification from [GoogleDrive-cls](https://drive.google.com/file/d/1k1k6b-cQ9UEh5_L3pVi1DHuYeqovi2Va/view?usp=sharing).
+4. Download images for fine tuning from [GoogleDrive-cls-fine-tune](https://drive.google.com/file/d/1PK4a64MWz_xDj4appGRuQcnHV_FSSpQj/view?usp=share_link) 
 ```
 data
 ├── coco
@@ -83,7 +85,8 @@ bash ./mmclassification/tools/train_multi.sh 2
 ```
 
 * Step2: testing.
-Please place the all models in the [checkpoints](./new_checkpoints) folder. These models can be downloaded from [Model-Zoo](https://drive.google.com/file/d/1nD80vqJQGEE2fL-sMx-cm6O5Q-uL7kF-/view?usp=sharing)
+Please place the all models in the [checkpoints](./new_checkpoints) folder. These models can be downloaded from [b2.pth](https://drive.google.com/file/d/1Sn476mEAOQ8vptrfYqEgLKeOPUXhj2sX/view?usp=share_link) [best_DTC_single_GPU.pth](https://drive.google.com/file/d/14uxbyXYcsBxAjY5JQhpv4a6uuwqyvMlG/view?usp=share_link) [cascade_mask_rcnn.pth](https://drive.google.com/file/d/1GIwM9V5IEWGOUiNOtCFk2r5v-bdYRSv3/view?usp=share_link) [detectors_cascade.pth](https://drive.google.com/file/d/1HMEIdPt3GSGDy8uBe8ZuwY5prqG62oEc/view?usp=share_link) [detectors_cascade_rcnn.pth]()
+
 ```
 new_checkpoints/
 ├── b2.pth
