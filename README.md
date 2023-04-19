@@ -6,7 +6,7 @@ This project (based on [mmdetection](https://github.com/open-mmlab/mmdetection) 
 ## Introduction
 
  The system has been validated in Multi-Class Product Counting & Recognition for Automated Retail Checkout (2023 AI CITY Challenge Task4) competition, where our results achieve F1 Score of 0.9787 in Task4 testA, ranking second in 2023 AICITY Challenge Task4.
- In light of the above perspectives, a self-adaptive target region-based product detection system is proposed to address the challenges of automated retail checkout. The main contributions of this work are as follows:
+ A self-adaptive target region-based product detection system is proposed to address the challenges of automated retail checkout. The main contributions of this work are as follows:
 1) An Adaptive Target Area Commodity Detection System is designed and verified in 2023 AI CITY Challenge Task4, and it achieves very high accuracy in commodity detection.
 2) A novel data augmentation approach and targeted data synthesis methods are developed to create training data that is more representative of real-world scenarios.
 3) A Dual-detector Fusion Algorithm is designed for the product detection problem, which is used to output the final detection boxes.
