@@ -63,7 +63,7 @@ test_videos/
 3. conda activate AdaptCD
 4. pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 5. pip install mmcv-full==1.4.3 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
-6. cd ./AICITY23_Task4-main
+6. cd ./AICITY23_Task4
 7. pip install -r requirements.txt
 8. sh ./tools1/setup.sh
 ```
