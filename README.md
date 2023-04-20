@@ -58,12 +58,14 @@ test_videos/
 * tensorflow-gpu 1.15.0
 
 ```shell
-1. conda create -n AdaptCD python=3.7
-2. conda activate AdaptCD
-3. conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch
-4. pip install mmcv-full==1.4.3 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
-5. pip install -r requirements.txt
-6. sh ./tools/setup.sh
+1. git clone https://github.com/mzl163/AICITY23_Task4.git
+2. conda create -n AdaptCD python=3.7
+3. conda activate AdaptCD
+4. pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+5. pip install mmcv-full==1.4.3 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
+6. cd ./AICITY23_Task4-main
+7. pip install -r requirements.txt
+8. sh ./tools1/setup.sh
 ```
 Prepare train&test data by following [here](#data-preparing)
 
@@ -89,6 +91,7 @@ bash ./tools1/train_mlp.sh
 ```
 
 * Step2: testing.
+
 Please place the all models in the [new_checkpoints](./new_checkpoints) folder. These models can be downloaded from [b2.pth](https://drive.google.com/file/d/1Sn476mEAOQ8vptrfYqEgLKeOPUXhj2sX/view?usp=share_link) ,[best_DTC_single_GPU.pth](https://drive.google.com/file/d/14uxbyXYcsBxAjY5JQhpv4a6uuwqyvMlG/view?usp=share_link) ,[cascade_mask_rcnn.pth](https://drive.google.com/file/d/1GIwM9V5IEWGOUiNOtCFk2r5v-bdYRSv3/view?usp=share_link) ,[detectors_cascade_rcnn.pth](https://drive.google.com/file/d/1HMEIdPt3GSGDy8uBe8ZuwY5prqG62oEc/view?usp=share_link) ,[detectors_htc.pth](https://drive.google.com/file/d/1JuW12j6P2J39CBqwbClHX6OwFpgWF4lB/view?usp=share_link)
 ,[feature.pth](https://drive.google.com/file/d/1AF_dru1ufAEiOSG5aNXykzpnEQbOOgnQ/view?usp=share_link)
 ,[s50.pth](https://drive.google.com/file/d/11KXnl0CS1ZPII4t5hpNNwk6VrWeovHo5/view?usp=share_link)
