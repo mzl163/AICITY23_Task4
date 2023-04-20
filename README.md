@@ -52,7 +52,7 @@ test_videos/
 
 * python 3.7.12
 * pytorch 1.10.0
-* torchvision 0.11.1
+* torchvision 0.11.2
 * cuda 10.2
 * mmcv-full 1.4.3
 * tensorflow-gpu 1.15.0
