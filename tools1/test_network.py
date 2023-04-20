@@ -42,26 +42,24 @@ checkpoint_file = './new_checkpoints/detectors_cascade_rcnn.pth'
 detector = init_detector(config_file, checkpoint_file)
 class_num_in_detector=1
 
-cmr_config_file = './mmdetection/work_dirs/cascade_mask_rcnn_r50_fpn_1x_coco/cascade_mask_rcnn_r50_fpn_1x_coco.py'
+cmr_config_file = './detectors_cascade_rcnn/cascade_mask_rcnn_r50_fpn_1x_coco.py'
 cmr_checkpoint_file = './new_checkpoints/cascade_mask_rcnn.pth'
 cmr_detector = init_detector(cmr_config_file, cmr_checkpoint_file)
 
 class_num_in_detector=1
 # feature model
 config_file = './configs/efficientnet-b0_8xb32-01norm_in1k.py'
-#checkpoint_file='/home/ldl/AiCity/DTC_AICITY2022-main/checkpoints/feature.pth'
 checkpoint_file='./new_checkpoints/feature.pth'
 feature_model = init_model(config_file, checkpoint_file)
 
 # model b2
 config_file = './mmclassification/configs/efficientnet/efficientnet-b2_8xb32-01norm_in1k.py'
 checkpoint_file = './new_checkpoints/b2.pth'
-#checkpoint_file = '/home/ldl/AiCity/DTC_AICITY2022/mmclassification-master/work_dirs/b2/epoch_1.pth'
 model_b2 = init_model(config_file, checkpoint_file)
 # model resnest50
 config_file = './mmclassification/configs/resnest/resnest50_32xb64_in1k.py'
 checkpoint_file = './new_checkpoints/s50.pth'
-#checkpoint_file = '/home/ldl/AiCity/DTC_AICITY2022/mmclassification-master/work_dirs/resnest50_32xb64_in1k/epoch_3.pth'
+
 model_s50 = init_model(config_file, checkpoint_file)
 # model resnest 101
 config_file = './mmclassification/configs/resnest/resnest101_32xb64_in1k.py'
